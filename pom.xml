@@ -372,5 +372,21 @@
                 </plugins>
 			</build>
 		</profile>
+		
+		<!-- openshift -->
+		<profile>
+			<id>openshift</id>
+			<build>
+				<plugins>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                        <configuration>
+                            <fork>true</fork>
+                        </configuration>
+                    </plugin>
+                </plugins>
+			</build>
+		</profile>
 	</profiles>
 </project>
